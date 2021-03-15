@@ -28,7 +28,7 @@
         .then(result => {
             result.data.forEach(item => {
                 const li = document.createElement('li');
-                li.innerHTML = `ТТН: ${ item.IntDocNumber } Имя: ${ item.RecipientContactPerson } Номер: ${ item.RecipientsPhone }`;
+                li.innerHTML = ` ${ item.IntDocNumber } ${ item.RecipientContactPerson } ${ item.RecipientsPhone }`;
                 list.appendChild(li);
             })
         })
